@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Item Form </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label>Item  Id</label>
+                        <input type="text" class="form-control" id="Id" [(ngModel)]="Item.id"
+                            name="id">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Name</label>
+                        <input type="text" class="form-control" id="Name" [(ngModel)]="Item.Name"
+                            name="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rental per day</label>
+                        <input type="text" class="form-control" id="rental per day "[(ngModel)]="Item.rental per day"
+                            name="rental per day">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label>fine per day</label>
+                        <input type="text" class="form-control" id="fine per day" [(ngModel)]="Item.fine per day"
+                            name="fine per day">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Availability</label>
+                        <input type="text" class="form-control" id="Availability" [(ngModel)]="Item.Availability"
+                            name="Availability">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Add</button>
+                    <button class="btn btn-primary" type="submit">Update</button>
+                    <button class="btn btn-danger" type ="submit">Delete</button>
+                    <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
